@@ -2,7 +2,7 @@ const fetch = require('isomorphic-fetch');
 const generator = require('../generator/generator.js');
 const fallback = require('./fallback.js');
 
-var maker = function() {
+var maker = () => {
   return fetch('http://hipsterjesus.com/api?html=false&type=hipster-centric&paras=10')
   .then(res => {
     return res.ok ? res.json() : fallback;
@@ -13,7 +13,7 @@ var maker = function() {
     let options = [5,7,5];
     let results = [];
 
-    options.forEach(function(num){
+    options.forEach(num => {
       const gen = generator(sentence, num);
       results.push(gen.generated)
       sentence = gen.input
@@ -29,7 +29,7 @@ var maker = function() {
     let options = [5,7,5];
     let results = [];
 
-    options.forEach(function(num){
+    options.forEach(num => {
       const gen = generator(sentence, num);
       results.push(gen.generated)
       sentence = gen.input
