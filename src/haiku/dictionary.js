@@ -5,6 +5,7 @@ const problematic = {
   'heard': 1,
 	'tbh': 3,
 	'cred': 1,
+  'pop-up': 2,
 	'mlkshk': 2,
 	'vhs': 3,
 	'diy': 3,
@@ -40,6 +41,13 @@ const problematic = {
   'chia': 2,
   'edison': 3,
   'ugh': 1,
+  'flexitarian': 5,
+  'pbr': 3,
+  'PBR': 3,
+  'salvia': 3,
+  'tousled': 2,
+  'typewriter': 3,
+  'kale': 1,
 }
 
 const blacklist = [
