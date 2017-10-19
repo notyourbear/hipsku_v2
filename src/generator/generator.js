@@ -18,7 +18,7 @@ module.exports = (input, maxSize) => {
       dictionary.problematic[word] : syllableCounter(word);
     if (wordLen + size <= maxSize) {
       sentence = sentence.concat(word);
-      size = size + wordLen;
+      size += wordLen;
       word = _.sample(lib[word]);
       newInput = newInput.split(' ').filter(el => el !== word).join(' ');
       Object.keys(lib).forEach(key => lib[key].filter(el => el !== word));
@@ -27,7 +27,9 @@ module.exports = (input, maxSize) => {
       word = _.sample(lib[word]);
     } else {
       delete lib[word];
-      options = Object.keys(lib).filter(el => !Object.hasOwnProperty.call(dictionary.blacklist, el));
+      options =
+        Object.keys(lib)
+          .filter(el => !Object.hasOwnProperty.call(dictionary.blacklist, el));
       word = _.sample(options);
     }
   }
