@@ -1,0 +1,22 @@
+html {
+  height: 100vh;
+  max-height: 100vh;
+  border: 1px solid red;
+}
+
+.container  {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: 50% 0;
+  transform: translateY(-50%);
+}
+
+.container > div {
+  width: 50%;
+  margin: 20px;
+  text-align: center;
+}

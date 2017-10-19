@@ -3,7 +3,7 @@ const markovGenerator = require('../markovGenerator/markovGenerator.js');
 const syllableCounter = require('../syllableCounter/syllableCounter.js');
 
 module.exports = (input, maxSize) => {
-  const lib =  markovGenerator(input);
+  let lib =  markovGenerator(input);
   let options = Object.keys(lib);
   let sentence = [];
   let size = 0;

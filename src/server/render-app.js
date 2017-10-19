@@ -9,10 +9,14 @@ const renderApp = (array) => {
     <!doctype html>
     <html>
       <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="${config.STATIC_PATH}/style.css">
         <title>Hipsku</title>
       </head>
       <body>
-        ${haiku}
+        <div class="container">
+          ${haiku}
+        </div>
       </body>
     </html>`);
 }

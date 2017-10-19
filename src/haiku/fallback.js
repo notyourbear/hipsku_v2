@@ -1,0 +1,22 @@
+let fallback = "Food truck gluten-free banksy, fap occupy bespoke whatever mustache.";
+fallback += " Occupy kogi kale chips chillwave, odd future typewriter iphone twee truffaut viral ethical artisan put a bird on it single-origin coffee banh mi."
+fallback += " Master cleanse brunch occupy trust fund marfa yr.";
+fallback += " Chillwave ennui fap, wes anderson cliche cosby sweater brooklyn vegan organic.";
+fallback += " Shoreditch PBR semiotics, chillwave art party photo booth terry richardson.";
+fallback += " Synth ennui semiotics mustache pickled, biodiesel food truck cosby sweater readymade mixtape letterpress pour-over";
+fallback += " Food truck freegan vinyl thundercats, post-ironic ennui wes anderson banh mi four loko synth photo booth.";
+fallback += " authentic 3 wolf moon. Sriracha pinterest sustainable jean shorts vinyl, beard echo park DIY squid mustache.";
+fallback += " cliche artisan cray pickled whatever.";
+fallback += " Occupy artisan hella letterpress, shoreditch brooklyn umami high life pork belly.";
+fallback += " Banksy dreamcatcher bushwick keytar, truffaut tofu scenester iphone bespoke marfa four loko";
+fallback += " DIY umami lo-fi, mlkshk small batch williamsburg cred.";
+fallback += " Godard shoreditch direct trade ethnic art party.";
+fallback += " Ethnic williamsburg echo park direct trade, messenger bag whatever";
+fallback += " 3 wolf moon cosby sweater ennui DIY organic. Quinoa you probably haven't heard of them ennui";
+fallback += " trust fund tofu banh mi flexitarian bicycle rights echo park gentrify messenger bag.";
+fallback += " Chillwave vice sriracha hella cliche forage.";
+fallback += " Thundercats artisan iphone";
+fallback += " next level keffiyeh fixie narwhal.";
+fallback += " Lomo banh mi godard mustache cardigan, ennui truffaut pop-up craft beer.";
+
+module.exports = fallback;

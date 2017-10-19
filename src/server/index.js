@@ -8,11 +8,10 @@ var maker = require('../haiku/index');
 const app = express();
 
 app.use(compression());
-app.use(config.STATIC_PATH, express.static(config.STATIC_PATH));
+app.use(config.STATIC_PATH, express.static('public'));
 
 app.get('/', (req, res) => {
   maker().then(sentenceArray => {
-    console.log({sentenceArray})
     res.send(renderApp(sentenceArray));
   })
 
