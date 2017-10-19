@@ -1,9 +1,9 @@
-var compression = require('compression');
-var express = require('express');
+const compression = require('compression');
+const express = require('express');
 
-var config = require('./config');
-var renderApp = require('./render-app');
-var maker = require('../haiku/index');
+const config = require('./config');
+const renderApp = require('./render-app');
+const maker = require('../haiku/index');
 
 const app = express();
 
@@ -11,10 +11,9 @@ app.use(compression());
 app.use(config.STATIC_PATH, express.static('public'));
 
 app.get('/', (req, res) => {
-  maker().then(sentenceArray => {
-    res.send(renderApp(sentenceArray));
-  })
-
+  maker().then(sentenceArray => (
+    res.send(renderApp(sentenceArray))
+  ));
 });
 
 app.listen(config.WEB_PORT, () => {

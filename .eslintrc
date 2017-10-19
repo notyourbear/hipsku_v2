@@ -5,6 +5,9 @@
       "array": false,
       "object": false
     }],
-    "no-param-reassign": 0
+    "no-param-reassign": 0,
+    "no-sequences": 0,
+    "no-confusing-arrow": 0,
+    "no-loop-func": 0
   }
 }

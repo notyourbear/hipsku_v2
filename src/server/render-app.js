@@ -1,9 +1,7 @@
-var config = require('./config');
+const config = require('./config');
 
 const renderApp = (array) => {
-  const haiku = array.reduce((agg, item) => {
-        return agg + `<div>${item}</div>`
-      }, '');
+  const haiku = array.reduce((agg, item) => (`${agg}<div>${item}</div>`, ''));
 
   return (`
     <!doctype html>
@@ -24,7 +22,7 @@ const renderApp = (array) => {
         </div>
       </body>
     </html>`);
-}
+};
 
 
 module.exports = renderApp;
