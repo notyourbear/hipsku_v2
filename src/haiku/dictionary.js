@@ -48,6 +48,8 @@ const problematic = {
   tousled: 2,
   typewriter: 3,
   kale: 1,
+  VHS: 3,
+  paleo: 3,
 };
 
 const blacklist = [

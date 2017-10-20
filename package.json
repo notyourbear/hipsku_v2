@@ -18,7 +18,7 @@
     "precommit": "yarn lint && yarn test",
     "prepush": "yarn lint && yarn test",
     "start": "nodemon ./src/server/index.js",
-    "prod:start": "NODE_ENV=production pm2 start./src/server/index.js && pm2 logs",
+    "prod:start": "NODE_ENV=production pm2 start ./src/server && pm2 logs",
     "prod:stop": "pm2 delete server"
   },
   "devDependencies": {
