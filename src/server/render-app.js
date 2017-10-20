@@ -20,6 +20,12 @@ const renderApp = (array) => {
       </head>
       <body>
         <div class="overlay"></div>
+        <div class="hr left left-top top"></div>
+        <div class="hr right right-top top"></div>
+        <div class="hr left left-bottom"></div>
+        <div class="hr right right-bottom"></div>
+        <div class="hr bottom bottom-left"></div>
+        <div class="hr bottom bottom-right"></div>
         <div class="container">
           ${haiku}
         </div>

@@ -43,8 +43,70 @@ body {
   text-align: center;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   body {
     background-image: url('background.jpg');
+  }
+
+  .hr {
+    position: absolute;
+    width: 3px;
+    background: white;
+    z-index: 10;
+  }
+
+  .left {
+    -moz-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+      transform: rotate(35deg);
+  }
+
+  .right {
+      -moz-transform: rotate(145deg);
+      -o-transform: rotate(145deg);
+      -webkit-transform: rotate(145deg);
+      -ms-transform: rotate(145deg);
+      transform: rotate(145deg);
+  }
+
+  .top {
+    top: 60px;
+    height: 50px;
+  }
+
+  .left-top {
+    left: 47%;
+  }
+
+  .right-top {
+    right: 47%;
+  }
+
+  .left-bottom {
+    height: 50px;
+    left: 22%;
+    bottom: 90px;
+  }
+
+  .right-bottom {
+    height: 50px;
+    right: 22%;
+    bottom: 90px;
+  }
+
+  .bottom {
+    height: 3px;
+    width: 80px;
+    bottom: 110px;
+  }
+
+  .bottom-left {
+    left: 20%;
+  }
+
+  .bottom-right {
+    right: 20%;
   }
 }

@@ -16,7 +16,6 @@ const problematic = {
   sartorial: 4,
   raclette: 2,
   'live-edge': 2,
-  semiotics: 4,
   cliche: 2,
   intelligentsia: 6,
   iceland: 2,
@@ -50,6 +49,12 @@ const problematic = {
   kale: 1,
   VHS: 3,
   paleo: 3,
+  literally: 3,
+  scenester: 2,
+  photo: 2,
+  "McSweeney's": 3,
+  semiotics: 4,
+  cleanse: 2,
 };
 
 const blacklist = [
