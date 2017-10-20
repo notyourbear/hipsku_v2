@@ -33,6 +33,7 @@ const problematic = {
   woke: 1,
   booth: 1,
   raw: 1,
+  Tumblr: 2,
   vaporware: 3,
   bottle: 2,
   offal: 2,
