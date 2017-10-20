@@ -16,11 +16,16 @@
     "lint": "eslint src",
     "test": "mocha ./src/**/**.test.js",
     "precommit": "yarn lint && yarn test",
-    "start": "nodemon ./src/server/index.js"
+    "prepush": "yarn lint && yarn test",
+    "start": "nodemon ./src/server/index.js",
+    "prod:start": "NODE_ENV=production pm2 start./src/server/index.js && pm2 logs",
+    "prod:stop": "pm2 delete server"
   },
   "devDependencies": {
     "eslint": "^4.8.0",
     "eslint-config-airbnb-base": "^12.0.1",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "pm2": "^2.7.2"
   }
 }
