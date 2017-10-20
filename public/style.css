@@ -86,13 +86,13 @@ body {
 
   .left-bottom {
     height: 50px;
-    left: 22%;
+    left: 28%;
     bottom: 90px;
   }
 
   .right-bottom {
     height: 50px;
-    right: 22%;
+    right: 28%;
     bottom: 90px;
   }
 
@@ -103,10 +103,10 @@ body {
   }
 
   .bottom-left {
-    left: 20%;
+    left: 25%;
   }
 
   .bottom-right {
-    right: 20%;
+    right: 25%;
   }
 }
