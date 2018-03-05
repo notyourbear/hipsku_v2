@@ -4,5 +4,6 @@ module.exports = (word) => {
   w = w.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
   w = w.replace(/^y/, '');
   w = w.match(/[aeiouy]{1,2}/g);
+
   return w.length;
 };
